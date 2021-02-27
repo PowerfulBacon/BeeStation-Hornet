@@ -200,7 +200,7 @@
 
 			else
 				//TODO: Needs check to see if mob can see lighting
-				if(T.get_lumcount()) //the light object is dark and not invisible to us
+				if(!T.get_lumcount()) //the light object is dark and not invisible to us
 					if(blind_message)
 						msg = blind_message
 					else
